@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+body{
+
+font-family: 'Roboto Conden',sans-serif;
+/* one way to target in css is just by element name like h1.the other
+two ways to target is by id or class name, if we are targrting an id we can use hash(#)
+symbol, */
+
+/* i */
+/* we cannot have multiple elements with the same id, we cannot have more than one id in a html file. */
+
+/*the line below is for how thick the letters are*/
+
+/* !important means this does not get overwritten by anything */
+
+/* weight og of the font means how thick we want the font to be */
+font-weight:300 !important;
+margin: 0px;
+
+}
+
+body h1{
+  font-weight: 300;
+
+  /* if we add only one px, then it is going to effect all sides
+  but if we add like the line below, 20px is going to apply for top and buttom
+  and 30px is going to apply for left and right
+  and if we add 4 different pxs, then it is going to be top,right, buttom,left */
+  margin: 20px 30px;
+
+}
+
+/* the line below means we are targeting the ID in the html file */
+/* in the line below, we are targeting an id, so we need to use #. */
+#main-header{
+  /*  in the line below first one is the width of the border, style of the border, and color of the border*/
+
+border-bottom: 2px solid #000;
+}
+
+#site-title{
+
+font-family: 'Press Start 2P',sans-serif;
+
+
+
+
+}
+#top-stories{
+
+width: 1000px;
+margin: auto;
+margin-top: 20px;
+
+
+
+
+}
+
+article{
+  /* the lines below will make all the articles to be in a horizontal line */
+  max-width: 301px;
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 10px;
+  margin: 0px;
+
+
+}
+
+article img{
+
+  width: 100%;
+  height: 100px;
+
+
+
+}
+
+/* in the line below, we are targeting class so we need to use dot(.). */
+.article-img{
+
+
+height: 200px;
+width: 100%;
+background-size: cover !important;
+background-position: center !important;
+
+}
+
+a{
+
+text-decoration: blink ;
+
+}
+
+.more-link{
+
+font-style: italic;
+}
+
+.bolded-link{
+
+  font-weight: 900;
+}
+
+/* the css code below is going to apply to the elements that has more-link and bolded-link classes both */
+
+.more-link.bolded-link{
+
+  color: #f00;
+
+
+}
